@@ -19,86 +19,46 @@ svg {
 }
 
 .anime1 {
-	.heart {
-		animation: heart 1.5s ease-in-out 0s forwards infinite alternate-reverse;
-	}
-
-	.catlefteye {
-		animation: cateye 10s ease-in-out 3s forwards infinite alternate-reverse;
-	}
-
-	.catrighteye {
-		animation: cateye 10s ease-in-out 3s forwards infinite alternate-reverse;
-	}
-
-	.bow {
-		animation: bow 1.5s ease-in-out 0s forwards infinite alternate-reverse;
-		transform-origin: 194px 311px;
-	}
-
 	.dog {
-		animation: dog 1.5s ease-in-out 0s forwards infinite alternate-reverse;
+		animation: catdog 2s linear 0s forwards infinite alternate-reverse;
 	}
 
 	.cat {
-		animation: cat 1.5s ease-in-out 0s forwards infinite alternate-reverse;
+		animation: catdog 2s linear 1s forwards infinite alternate-reverse;
+	}
+
+	.woman {
+		animation: 1.5s Infinite linear woman;
+		animation-delay: 0s;
+		transform-origin: 50% 50%;
+	}
+
+	.heart {
+		animation: 1.5s Infinite ease-in-out heart alternate-reverse;
 	}
 }
 
-@keyframes cat {
-	from {
-		transform: translateX(0px);
-	}
-
-	to {
-		transform: translateX(20px);
-	}
+@keyframes woman {
+	0% { transform: rotate( 0deg ); } 
+	25% { transform: rotate( 1deg ); } 
+	75% { transform: rotate( -1deg ); } 
 }
 
-@keyframes dog {
-	from {
-		transform: translateX(0px);
-	}
-
-	to {
-		transform: translateX(-20px);
-	}
-}
-
-@keyframes bow {
+@keyframes catdog {
 	0% {
-		transform: rotate(0deg);
+		transform: translatey(0px);
 	}
 
 	50% {
-		transform: rotate(-5deg);
+		transform: translateY(-10px);
 	}
 
 	100% {
-		transform: rotate(5deg);
+		transform: translatey(0px);
 	}
 }
 
 @keyframes heart {
-	from {
-		transform: translate(0px, -0px);
-	}
-
-	to {
-		transform: translate(20px, -20px);
-	}
-}
-
-@keyframes cateye {
-	0% {
-		transform: translate(0px, -0px);
-	}
-
-	95% {
-		transform: translate(-4px, 4px);
-	}
-
-	100% {
-		transform: translate(0px, -0px);
-	}
+	from { transform: translate(0,0); } 
+	to { transform: translate(10px, -10px); } 
 }
