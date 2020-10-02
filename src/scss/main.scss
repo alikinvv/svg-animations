@@ -1,0 +1,104 @@
+@charset 'UTF-8';
+@import 'mixins';
+
+// @include font-face('fontName', '../fonts/fontPath/fontName', normal); 
+
+.icon {
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	font-size: 30px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+svg {
+	max-width: 263px;
+}
+
+.anime1 {
+	.heart {
+		animation: heart 1.5s ease-in-out 0s forwards infinite alternate-reverse;
+	}
+
+	.catlefteye {
+		animation: cateye 10s ease-in-out 3s forwards infinite alternate-reverse;
+	}
+
+	.catrighteye {
+		animation: cateye 10s ease-in-out 3s forwards infinite alternate-reverse;
+	}
+
+	.bow {
+		animation: bow 1.5s ease-in-out 0s forwards infinite alternate-reverse;
+		transform-origin: 194px 311px;
+	}
+
+	.dog {
+		animation: dog 1.5s ease-in-out 0s forwards infinite alternate-reverse;
+	}
+
+	.cat {
+		animation: cat 1.5s ease-in-out 0s forwards infinite alternate-reverse;
+	}
+}
+
+@keyframes cat {
+	from {
+		transform: translateX(0px);
+	}
+
+	to {
+		transform: translateX(20px);
+	}
+}
+
+@keyframes dog {
+	from {
+		transform: translateX(0px);
+	}
+
+	to {
+		transform: translateX(-20px);
+	}
+}
+
+@keyframes bow {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(-5deg);
+	}
+
+	100% {
+		transform: rotate(5deg);
+	}
+}
+
+@keyframes heart {
+	from {
+		transform: translate(0px, -0px);
+	}
+
+	to {
+		transform: translate(20px, -20px);
+	}
+}
+
+@keyframes cateye {
+	0% {
+		transform: translate(0px, -0px);
+	}
+
+	95% {
+		transform: translate(-4px, 4px);
+	}
+
+	100% {
+		transform: translate(0px, -0px);
+	}
+}
