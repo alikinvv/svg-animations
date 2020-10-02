@@ -44,37 +44,37 @@ svg {
 
 @keyframes woman {
 	0% { transform: rotate( 0deg ); } 
-	15% { transform: rotate( 1deg ); } 
-	25% { transform: rotate( -1deg ); } 
-	30% { transform: rotate( 1deg ); } 
-	35% { transform: rotate( -1deg ); } 
-	40% { transform: rotate( 1deg ); } 
-	45% { transform: rotate( -1deg ); } 
-	50% { transform: rotate( 1deg ); } 
-	55% { transform: rotate( -1deg ); } 
-	60% { transform: rotate( 1deg ); } 
-	65% { transform: rotate( -1deg ); } 
-	70% { transform: rotate( 1deg ); } 
-	75% { transform: rotate( -1deg ); }
-	80% { transform: rotate( 1deg ); } 
-	85% { transform: rotate( -1deg ); }  
+	15% { transform: rotate( 3deg ); } 
+	25% { transform: rotate( -3deg ); } 
+	30% { transform: rotate( 3deg ); } 
+	35% { transform: rotate( -3deg ); } 
+	40% { transform: rotate( 3deg ); } 
+	45% { transform: rotate( -3deg ); } 
+	50% { transform: rotate( 3deg ); } 
+	55% { transform: rotate( -3deg ); } 
+	60% { transform: rotate( 3deg ); } 
+	65% { transform: rotate( -3deg ); } 
+	70% { transform: rotate( 3deg ); } 
+	75% { transform: rotate( -3deg ); }
+	80% { transform: rotate( 3deg ); } 
+	85% { transform: rotate( -3deg ); }  
 }
 
 @keyframes catdog {
 	0% { transform: translatey(0px); }
-	5% { transform: translateY(-10px); }
+	5% { transform: translateY(-30px); }
 	10% { transform: translatey(0px); }
 }
 
 @keyframes heart {
 	from { transform: translate(0,0); } 
-	to { transform: translate(10px, -10px); } 
+	to { transform: translate(30px, -30px); } 
 }
 
 @keyframes message {
 	0% { transform: translateX(0px); } 
-	25% { transform: translateX(-3px); } 
-	75% { transform: translateX(3px); } 
+	25% { transform: translateX(-9px); } 
+	75% { transform: translateX(9px); } 
 }
 
 .anime2 {
