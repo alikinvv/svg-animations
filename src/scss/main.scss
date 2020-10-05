@@ -33,10 +33,51 @@ svg {
 		transform-origin: 50% 50%;
 	}
 
-	.heart {
-		animation: 1.5s Infinite ease-in-out heart alternate-reverse;
+	.hand {
+		transform: rotate(0deg); // 16
+		transform-origin: 39% 58%;
+		animation: 8s Infinite linear womanhand;
 	}
 
+}
+
+@keyframes woman2 {
+	0% { transform: rotate( 0deg ); } 
+	15% { transform: rotate( 3deg ); } 
+	25% { transform: rotate( -3deg ); } 
+	30% { transform: rotate( 3deg ); } 
+	35% { transform: rotate( -3deg ); } 
+	40% { transform: rotate( 3deg ); } 
+	45% { transform: rotate( -3deg ); } 
+	50% { transform: rotate( 3deg ); } 
+	55% { transform: rotate( -3deg ); } 
+	60% { transform: rotate( 3deg ); } 
+	65% { transform: rotate( -3deg ); } 
+	70% { transform: rotate( 3deg ); } 
+	75% { transform: rotate( -3deg ); }
+	80% { transform: rotate( 3deg ); } 
+	85% { transform: rotate( -3deg ); }  
+	90% { transform: rotate(16deg);; }  
+}
+
+@keyframes womanhand {
+	0% { transform:  rotate(0); } 
+	15% { transform: rotate(0); } 
+	25% { transform: rotate(0); } 
+	30% { transform: rotate(0); } 
+	35% { transform: rotate(0); } 
+	40% { transform: rotate(0); } 
+	45% { transform: rotate(0); } 
+	50% { transform: rotate(0); } 
+	55% { transform: rotate(0); } 
+	60% { transform: rotate(0); } 
+	65% { transform: rotate(0); } 
+	70% { transform: rotate(0); } 
+	75% { transform: rotate(0); }
+	80% { transform: rotate(0); } 
+	85% { transform: rotate(-16deg); }  
+	90% { transform: rotate(-16deg); }  
+	95% { transform: rotate(-16deg); }  
 }
 
 @keyframes woman {
@@ -248,7 +289,7 @@ svg {
 	}
 
 	.woman {
-		animation: woman 8s linear 0s forwards infinite;
+		animation: woman4 8s linear 0s forwards infinite;
 		transform-origin: 50% 50%;
 	}
 
@@ -262,6 +303,26 @@ svg {
 	}
 }
 
+@keyframes woman4 {
+	0% { transform:  rotate(0); }
+	5% { transform:  rotate(-3deg); }
+	10% { transform: rotate(3deg); }
+	15% { transform: rotate(-3deg); }
+	20% { transform: rotate(3deg); }
+	25% { transform: rotate(-3deg); }
+	30% { transform: rotate(3deg); }
+	35% { transform: rotate(-3deg); }
+	40% { transform: rotate(3deg); }
+	45% { transform: rotate(-3deg); }
+	50% { transform: rotate(3deg); }
+	55% { transform: rotate(-3deg); }
+	60% { transform: rotate(3deg); }
+	65% { transform: rotate(-3deg); }
+	70% { transform: rotate(0); }
+	80% { transform: rotate(0); }
+	90% { transform: rotate(0); }
+}
+
 .anime5 {
 	.car {
 		animation: woman 8s linear 0s forwards infinite;
@@ -271,6 +332,14 @@ svg {
 	.woman {
 		animation: wm 8s linear 0s forwards infinite;
 		transform-origin: 50% 50%;
+	}
+
+	.light {
+		animation: light 8s linear 0s forwards infinite;
+	}
+
+	.cross {
+		animation: cross 8s linear 0s forwards infinite;
 	}
 }
 
@@ -285,6 +354,32 @@ svg {
 	70% { transform: translateY(-10px); }
 	80% { transform: translateY(0px); }
 	90% { transform: translateY(-10px); }
+}
+
+@keyframes light {
+	0%  { fill: rgb(232, 237, 239)  }
+	10% { fill: #f5ff84  }
+	20% { fill: rgb(232, 237, 239)  }
+	30% { fill: #f5ff84 }
+	40% { fill: rgb(232, 237, 239)  }
+	50% { fill: #f5ff84 }
+	60% { fill: rgb(232, 237, 239)  }
+	70% { fill: #f5ff84 }
+	80% { fill: rgb(232, 237, 239)  }
+	90% { fill: #f5ff84 }
+}
+
+@keyframes cross {
+	0%  { opacity: 0;  }
+	10% { opacity: 1;  }
+	20% { opacity: 0;  }
+	30% { opacity: 1;  }
+	40% { opacity: 0;  }
+	50% { opacity: 1;  }
+	60% { opacity: 0;  }
+	70% { opacity: 1;  }
+	80% { opacity: 0;  }
+	90% { opacity: 1;  }
 }
 
 @keyframes mleft {
@@ -316,11 +411,11 @@ svg {
 @keyframes cup {
 	0% { transform: rotate(0); }
 	10% { transform: rotate(-7deg); }
-	20% { transform: rotate(-7deg); }
+	20% { transform: rotate(7deg); }
 	30% { transform: rotate(-7deg); }
-	40% { transform: rotate(-7deg); }
+	40% { transform: rotate(7deg); }
 	50% { transform: rotate(-7deg); }
-	60% { transform: rotate(-7deg); }
+	60% { transform: rotate(7deg); }
 	70% { transform: rotate(0); }
 	80% { transform: rotate(0); }
 	90% { transform: rotate(0); }
@@ -329,11 +424,11 @@ svg {
 @keyframes hands {
 	0% { transform: translateY(0); }
 	10% { transform: translateY(-10px); }
-	20% { transform: translateY(-10px); }
+	20% { transform: translateY(10px); }
 	30% { transform: translateY(-10px); }
-	40% { transform: translateY(-10px); }
+	40% { transform: translateY(10px); }
 	50% { transform: translateY(-10px); }
-	60% { transform: translateY(-10px); }
+	60% { transform: translateY(10px); }
 	70% { transform: translateY(0); }
 	80% { transform: translateY(0); }
 	90% { transform: translateY(0); }
@@ -406,6 +501,11 @@ svg {
 		transform-origin: 50% 50%;
 	}
 
+	.eye {
+		animation: eye2 8s linear 0s forwards infinite;
+		transform-origin: 73% 20%;
+	}
+
 	.dust {
 		animation: dust 8s linear 0s forwards infinite;
 		transform-origin: 50% 50%;
@@ -450,6 +550,25 @@ svg {
 	85% { transform: translateY(0); }  
 }
 
+@keyframes eye2 {
+	0% { transform:  scale(1); } 
+	5% { transform:  scale(1); } 
+	10% { transform: scale(1); } 
+	15% { transform: scale(1); } 
+	25% { transform: scale(1.4); } 
+	30% { transform: scale(1.4); } 
+	35% { transform: scale(1.4); } 
+	40% { transform: scale(1.4); } 
+	45% { transform: scale(1); } 
+	50% { transform: scale(1); } 
+	55% { transform: scale(1); } 
+	60% { transform: scale(1); } 
+	65% { transform: scale(1); } 
+	70% { transform: scale(1); } 
+	75% { transform: scale(1); }
+	80% { transform: scale(1); } 
+	85% { transform: scale(1); }  
+}
 
 @keyframes dust {
 	0% {  opacity: 1 } 
@@ -488,10 +607,12 @@ svg {
 
 @keyframes browser {
 	0% {  transform: translateX(0px); }
-	10% { transform: translateX(-10px); }
-	30% { transform: translateX(10px); }
 	50% { transform: translateX(-10px); }
-	70% { transform: translateX(10px); }
+	60% { transform: translateX(10px); }
+	70% { transform: translateX(-10px); }
+	80% { transform: translateX(10px); }
+	90% { transform: translateX(-10px); }
+	100% { transform: translateX(0); }
 }
 
 @keyframes flowers {
@@ -503,13 +624,13 @@ svg {
 
 @keyframes jm2 {
 	0% { transform:  translateY(0); } 
-	5% { transform:  translateY(-5px); } 
+	5% { transform:  translateY(-30px); } 
 	10% { transform:  translateY(0); } 
-	15% { transform: translateY(-5px); } 
+	15% { transform: translateY(-30px); } 
 	25% { transform: translateY(0); } 
-	30% { transform: translateY(0); } 
+	30% { transform: translateY(-70px); } 
 	35% { transform: translateY(0); } 
-	40% { transform: translateY(0); } 
+	40% { transform: translateY(-70px); } 
 	45% { transform: translateY(0); } 
 	50% { transform: translateY(0); } 
 	55% { transform: translateY(0); } 
